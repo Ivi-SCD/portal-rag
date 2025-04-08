@@ -1,0 +1,17 @@
+.PromptsGaleryConatiner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  width: 80vw;
+  max-width: 1500px;
+}
+
+diana-modal.PromptsGalery .sicredi-modal > .modal {
+  min-height: 70vh;
+}
+
+diana-modal.PromptsGalery .sicredi-modal > .modal > .body {
+  flex: 1;
+  min-height: 64vh;
+  margin-bottom: 4px;
+}

@@ -1,0 +1,85 @@
+@import "@diana-kit/web/src/scss/tokens.scss";
+
+.TextareaBox {
+  border: none;
+  border: 1px solid $secondary200;
+  padding: 12px 16px;
+  border-radius: 4px;
+  height: fit-content;
+}
+
+.TextareaBox textarea {
+  width: 100%;
+  resize: none;
+  font-family: $fontFamilyBase;
+  font-weight: $fontWeightRegular;
+  font-size: $fontSizeMedium;
+  line-height: $fontLineHeightMedium;
+  color: $secondary900;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  flex: 1;
+}
+
+.TextareaBox textarea:focus {
+  outline: none;
+}
+
+.TextareaBox textarea::placeholder {
+  color: $secondary900;
+}
+
+.TextareaBox .Bar {
+  width: 1px;
+  height: 34px;
+  background-color: $primary100;
+}
+
+.TextareaBox .Buttons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 16px;
+}
+
+.IconButton {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  height: 24px;
+  width: 24px;
+  padding: 4px;
+  background-color: blanchedalmond;
+}
+
+.sc-diana-tag-h {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.sc-diana-tag-h diana-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.ErrorBox {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.ErrorBox .titleH6 {
+  color: $supportRed700;
+  font-size: $fontSizeSmall;
+  line-height: $fontLineHeightSmall;
+  font-family: $fontFamilyHighlighted;
+  font-weight: $fontWeightLight;
+  margin: 0;
+}

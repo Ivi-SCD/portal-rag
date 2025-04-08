@@ -1,0 +1,56 @@
+@import "@diana-kit/web/src/scss/tokens.scss";
+
+.DropdownMenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  z-index: 30;
+  box-shadow: 0 5px 10px 0 #cdd3cd;
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.DropdownMenu.Close {
+  display: none;
+}
+
+.DropdownMenu .Item {
+  box-sizing: border-box;
+  min-width: 200px;
+  line-height: 24px;
+  color: #33820d;
+  display: flex;
+  padding: 10px 16px;
+  font-size: 16px;
+  transition:
+    background-color 0.25s,
+    color 0.25s,
+    border 0.25s;
+  align-items: center;
+  font-weight: 700;
+  font-family: Nunito, sans-serif;
+  border-bottom: 1px solid #cdd3cd;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+.DropdownMenu .Item:hover {
+  background-color: $secondary50;
+}
+
+.DropdownMenu .Item:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.DropdownMenu .Item:last-child {
+  border-bottom: none;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}

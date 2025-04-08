@@ -1,0 +1,49 @@
+@import "@diana-kit/web/src/scss/tokens.scss";
+
+.TextArea {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  gap: 8px;
+}
+
+.TextBox {
+  background-color: $secondary50;
+  width: 100%;
+  text-align: end;
+  padding: 16px 24px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+}
+
+.RelatedDocs .diana-title {
+  color: $primary800;
+}
+
+.CustomTitle6 {
+  font-family: $fontFamilyHighlighted;
+  font-weight: $fontWeightLight;
+  font-size: $fontSizeSmall;
+  line-height: $fontLineHeightSmall;
+  color: #5d635d;
+}
+
+.title5 {
+  font-size: $fontSizeMedium;
+  line-height: $fontLineHeightMedium;
+  color: $secondary900;
+  font-family: $fontFamilyHighlighted;
+  font-weight: $fontWeightLight;
+}
+
+.title5Bold {
+  font-size: $fontSizeMedium;
+  line-height: $fontLineHeightMedium;
+  color: $secondary900;
+  font-family: $fontFamilyHighlighted;
+  font-weight: $fontWeightBold;
+}

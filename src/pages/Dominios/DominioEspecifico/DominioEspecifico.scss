@@ -1,0 +1,34 @@
+@import "@diana-kit/web/src/scss/tokens.scss";
+
+.pageTitle {
+  font-family: $fontFamilyHighlighted;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0;
+  color: $primary700;
+  margin: 0;
+}
+
+.description h4 {
+  color: $secondary600;
+}
+
+.CampoPesquisaDoc {
+  width: 582px;
+}
+
+.CampoPesquisaDoc span {
+  display: flex;
+  align-items: center;
+}
+
+.TabTitles_DominioEspecifico h3.diana-title {
+  color: $primary700;
+}
+
+#add-doc a.sc-diana-file-item:link {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 40vw;
+}

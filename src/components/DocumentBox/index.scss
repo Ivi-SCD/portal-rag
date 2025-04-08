@@ -1,0 +1,16 @@
+@import "@diana-kit/web/src/scss/tokens.scss";
+
+.DocumenteBox {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.DocumenteBox .titleH6 {
+  color: #33820d;
+  font-size: $fontSizeSmall;
+  line-height: $fontLineHeightSmall;
+  font-family: $fontFamilyHighlighted;
+  font-weight: $fontWeightLight;
+  margin: 0;
+}

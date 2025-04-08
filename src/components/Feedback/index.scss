@@ -1,0 +1,44 @@
+@import "@diana-kit/web/src/scss/tokens.scss";
+
+.Selected {
+  background-color: $primary700 !important;
+  color: $secondary00 !important;
+  opacity: 1 !important;
+  fill: none;
+
+  diana-icon path {
+    stroke: $secondary00 !important;
+    stroke-width: 0.1px;
+  }
+
+  p {
+    color: $secondary00 !important;
+  }
+}
+
+.FeedBackButton {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  padding: 4px 6px;
+  gap: 4px;
+
+  p {
+    color: $primary700;
+  }
+
+  color: $primary700;
+}
+
+.FeedBackButton:hover {
+  background-color: $primary700;
+  color: $secondary00;
+  opacity: 0.5;
+
+  p {
+    color: $secondary00;
+  }
+}

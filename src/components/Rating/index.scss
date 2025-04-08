@@ -1,0 +1,66 @@
+@import "@diana-kit/web/src/scss/tokens.scss";
+
+.RatingBox {
+  color: $secondary600;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 2px;
+}
+
+.Icon {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.RatingBox svg {
+  cursor: pointer;
+  transition:
+    fill 0.3s ease,
+    stroke 0.3s ease;
+  height: 16px;
+  width: 16px;
+  stroke-width: 4px;
+}
+
+.RatingBox .Icon:hover {
+  fill: $supportGray75;
+}
+
+.Selected {
+  fill: $primary700;
+  background-color: transparent;
+  stroke: $primary700;
+}
+
+.Selected:hover {
+  fill: $primary700;
+}
+
+.rating {
+  display: flex;
+  gap: 5px;
+}
+
+.star {
+  cursor: pointer;
+  transition:
+    fill 0.3s ease,
+    stroke 0.3s ease;
+  height: 16px;
+  width: 16px;
+  stroke: $secondary600;
+  fill: none;
+}
+
+.star.hover {
+  fill: $supportGray75;
+  background-color: transparent;
+}
+
+.star.selected {
+  fill: $primary700;
+  background-color: transparent;
+  stroke: $primary700;
+}

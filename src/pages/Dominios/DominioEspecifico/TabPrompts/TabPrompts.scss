@@ -1,0 +1,16 @@
+@import "@diana-kit/web/src/scss/tokens.scss";
+
+.PromptsCardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.EmpityText {
+  font-family: $fontFamilyBase;
+  font-weight: $fontWeightLight;
+  font-size: $fontSizeMedium;
+  line-height: $fontLineHeightMedium;
+  text-align: center;
+  vertical-align: middle;
+}

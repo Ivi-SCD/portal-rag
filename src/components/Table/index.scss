@@ -1,0 +1,65 @@
+@import "@diana-kit/web/src/scss/tokens.scss";
+
+.TableComponent {
+  max-width: calc(100vw - 18rem);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  position: relative;
+  border-collapse: collapse;
+  color: #323c32;
+  font-family: Nunito, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: inherit;
+  box-sizing: border-box;
+  table-layout: auto;
+  max-width: calc(100vw - 18rem);
+}
+
+.TableItem {
+  text-align: start;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: calc(24px * 2);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+}
+
+table .diana-icon {
+  color: $primary700;
+}
+
+th,
+td {
+  padding: 20px 16px;
+  gap: 8px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: $secondary50;
+}
+
+tbody {
+  margin-bottom: 40px;
+}
+
+.col {
+  display: flex;
+  gap: 8px;
+}
+
+.Gerenciar .col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+tfoot td {
+  padding: 0;
+}

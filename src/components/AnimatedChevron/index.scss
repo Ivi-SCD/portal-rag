@@ -1,0 +1,9 @@
+.iconChevron.open {
+  transform: rotate(0deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.iconChevron.close {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease-in-out;
+}

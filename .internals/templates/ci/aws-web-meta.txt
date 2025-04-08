@@ -1,0 +1,7 @@
+{
+  "build_dir": "build",
+  "job_template_type": ["value"],
+  "base_href": {
+    "value": "/value"
+  }
+}

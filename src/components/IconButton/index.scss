@@ -1,0 +1,23 @@
+@import "@diana-kit/web/src/scss/tokens.scss";
+
+.IconButton {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+.IconButton img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.IconButton:hover {
+  background-color: $secondary50;
+}

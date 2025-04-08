@@ -1,0 +1,4 @@
+{
+  "pattern": "^(feature|fix|hotfix|short-release!|short-release|release!|release)\\/[A-Z0-9]{1,6}-\\d+(?:,[A-Z]{1,5}-\\d+)*$",
+  "errorMsg": "Nome da branch deve seguir o pattern: <type>/<issue_ID> ex.: feature/ENGSFT-1234 ou feature/ENGSFT-1234,ENGSFT-4566"
+}

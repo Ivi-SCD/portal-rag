@@ -1,0 +1,8 @@
+include:
+  - project: "engineering/engineering-ci-cd"
+    ref: "master"
+    file: ".gitlab-ci.yml"
+ 
+default:
+  image:
+    name: "harbor.sicredi.net/docker-base-images/node:node-18"

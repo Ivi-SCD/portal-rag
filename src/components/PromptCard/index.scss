@@ -1,0 +1,96 @@
+@import "@diana-kit/web/src/scss/tokens.scss";
+
+.colorSecondary {
+  color: $secondary900;
+}
+
+.CardPromptBox {
+  display: flex;
+  flex-direction: column;
+  background-color: $primary50;
+  border-radius: 4px;
+  padding: 24px 16px;
+  box-shadow: 0 4px 8px 0 #323c3233;
+  transition: all 0.5s;
+  z-index: 30;
+}
+
+.CardPromptBox diana-button button.default {
+  padding: 0;
+  height: fit-content;
+  font-size: 14px;
+}
+
+.CardPromptBox diana-button button.default:hover {
+  background: transparent;
+}
+
+.PromptTextArea {
+  text-align: start;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: calc(24px * 3);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+}
+
+.IconButtons_Prompts diana-icon {
+  color: $primary700;
+  cursor: pointer;
+}
+
+.IconButtons_Prompts {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  gap: 10px;
+}
+
+.ButtonBox {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  gap: 16px;
+}
+
+.ModalPromptContainer {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 20;
+  position: fixed;
+  visibility: hidden;
+  overflow-x: auto;
+  background: rgb(130 138 130 / 50%);
+  transition:
+    visibility 0.25s,
+    opacity 0.25s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ModalPromptBox {
+  opacity: 0;
+  min-width: 40%;
+  max-height: 80%;
+  overflow-y: auto;
+
+  // transform: translateY(-100px);
+  visibility: hidden;
+  text-align: left;
+  transition:
+    visibility 0.25s,
+    opacity 0.25s,
+    transform 0.25s;
+  transition-delay: 0.25s;
+}
+
+.ShowPromptModal {
+  opacity: 1;
+  visibility: visible;
+}

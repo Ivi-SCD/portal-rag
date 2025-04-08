@@ -1,0 +1,85 @@
+$typographyFamilyBase: "Nunito", sans-serif !default;
+$focusDisabled: sicredi-focus-disabled;
+
+@import "@diana-kit/web/src/scss/reset.scss";
+@import "@diana-kit/web/src/scss/tokens.scss";
+
+html {
+  background-color: $secondary00;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $secondary00;
+  height: 100%;
+}
+
+.Container {
+  width: 100%;
+  max-width: calc(100% - 18rem);
+  margin: 0 auto;
+}
+
+.TypographyExtra {
+  font-family: $fontFamilyHighlighted;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: $secondary900;
+  padding: 0;
+  margin: 0;
+}
+
+.ButtonText {
+  font-family: $typographyFamilyBase;
+  font-weight: $fontWeightBold;
+  font-size: $fontSizeMedium;
+  line-height: $fontLineHeightMedium;
+  color: $primary700;
+}
+
+.Caption {
+  font-family: $typographyFamilyBase;
+  font-weight: $fontWeightRegular;
+  font-size: $fontSizeSmall;
+  line-height: $fontLineHeightMedium;
+  color: $primary700;
+}
+
+.SmallText {
+  font-family: $fontFamilyBase;
+  font-weight: $fontWeightRegular;
+  font-size: $fontSizeXSmall;
+  line-height: $fontLineHeightSmall;
+  color: $secondary700;
+}
+
+.placeholder {
+  font-family: $fontFamilyBase;
+  font-weight: $fontWeightRegular;
+  font-size: $fontSizeMedium;
+  line-height: $fontLineHeightMedium;
+  letter-spacing: 0;
+  color: $secondary900;
+  margin: 0;
+}
+
+.Focus {
+  font-weight: $fontWeightBold;
+}
+
+.Primary700 {
+  color: $primary700;
+}
+
+p {
+  margin: 0;
+}
+
+ol diana-breadcrumb-item li {
+  padding-left: 0;
+}

@@ -1,0 +1,16 @@
+@import "@diana-kit/web/src/scss/tokens.scss";
+
+.ProgressBar {
+  width: 100%;
+  height: 16px;
+  background-color: $primary50;
+  border-radius: 16px;
+}
+
+.ProgressBar div {
+  background-color: $primary700;
+  border-radius: 16px;
+  height: 100%;
+  z-index: 10;
+  transition: "width 1s ease-in-out";
+}

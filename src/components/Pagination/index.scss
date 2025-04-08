@@ -1,0 +1,68 @@
+@import "@diana-kit/web/src/scss/tokens.scss";
+
+.Pagination .Selected {
+  background-color: transparent !important;
+  color: $primary900 !important;
+  pointer-events: none;
+  border-bottom: 1px solid $primary900;
+  text-decoration: none;
+  font-family: $fontFamilyBase;
+}
+
+ol {
+  display: flex;
+  counter-reset: item;
+  list-style-type: none;
+  align-items: center;
+  color: $primary700;
+  font-size: $fontSizeMedium;
+  font-weight: $fontWeightBold;
+
+  li {
+    padding: 0 8px;
+
+    &:not(:first-child, :last-child) {
+      & a:hover {
+        cursor: pointer;
+      }
+    }
+
+    & diana-icon {
+      cursor: pointer;
+      vertical-align: middle;
+
+      &.disabled {
+        opacity: 0.5;
+        pointer-events: none;
+      }
+    }
+
+    .item {
+      text-align: center;
+      text-decoration: none;
+      height: 40px;
+      border: none;
+      font-family: $fontFamilyBase;
+      font-size: $fontSizeMedium;
+      color: $primary700;
+      align-items: center;
+      font-weight: $fontWeightBold;
+
+      &[aria-hidden="true"] {
+        pointer-events: none;
+        cursor: block;
+      }
+
+      &[aria-current="true"] {
+        color: $secondary600;
+        border-color: $primary700;
+      }
+
+      &.selected {
+        color: $primary900;
+        pointer-events: none;
+        border-bottom: 1px solid $primary900;
+      }
+    }
+  }
+}

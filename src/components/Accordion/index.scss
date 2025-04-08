@@ -1,0 +1,56 @@
+@import "@diana-kit/web/src/scss/tokens.scss";
+
+.accordion_header {
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 40px;
+  padding: 0 16px;
+  cursor: pointer;
+  border: 1px solid $secondary200;
+  outline: none;
+  transition: border-radius 300ms ease-in-out;
+}
+
+.accordion_header h5.diana-title {
+  color: $secondary900;
+}
+
+.accordion_header.open {
+  border-radius: 4px 4px 0 0;
+}
+
+.accordion_content.open {
+  max-height: 6rem;
+  opacity: 1;
+  visibility: visible;
+  border: 1px solid $secondary200;
+  border-top: 0;
+  padding: 8px 16px;
+  overflow: auto;
+  border-radius: 0 0 4px 4px;
+  transition:
+    max-height 300ms ease-in-out,
+    opacity 300ms ease-in-out,
+    visibility 300ms ease-in-out;
+}
+
+.accordion_content {
+  font-family: Nunito, sans-serif;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 24px;
+  border: 1px solid $secondary200;
+  border-top: 0;
+  padding: 8px 16px;
+  position: relative;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition:
+    max-height 300ms ease-in-out,
+    opacity 300ms ease-in-out,
+    visibility 300ms ease-in-out;
+}

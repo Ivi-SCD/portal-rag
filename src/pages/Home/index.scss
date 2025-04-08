@@ -1,0 +1,45 @@
+@import "@diana-kit/web/src/scss/tokens.scss";
+
+.Banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 9rem;
+  height: 286px;
+  border-bottom: 1px solid $secondary200;
+}
+
+.BannerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  max-width: 700px;
+  margin-right: 28px;
+}
+
+.BannerContent h2.diana-title {
+  color: $primary700;
+}
+
+.FiltrosDominios {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.FiltrosDominios diana-checkbox-single {
+  display: flex;
+  width: fit-content !important;
+}
+
+.PromptHome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+diana-accordion .content-box .content-wrapper {
+  display: flex;
+  gap: 24px;
+}

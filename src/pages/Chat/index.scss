@@ -1,0 +1,86 @@
+@import "@diana-kit/web/src/scss/tokens.scss";
+
+diana-button button .btn-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.NewChat {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.NewChatButton {
+  display: flex;
+  height: 56px;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.typing-indicator {
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  margin: 0 2px;
+  background-color: $primary700;
+  border-radius: 50%;
+  animation: bounce 1s infinite;
+
+  --translate-y: -8px;
+  --translate-y-half: -calc($ baseline / 2);
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.6s;
+  margin-right: 0;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+
+  30% {
+    transform: scale(0.9, 1.1) translateY(var(--translate-y));
+  }
+
+  50% {
+    transform: scale(1, 1) translateY(0);
+  }
+
+  57% {
+    transform: translateY(var(--translate-y-half));
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.Prompt {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  color: $primary700;
+}
+
+.sc-diana-tag-h .icon.sc-diana-tag {
+  max-width: 24px;
+  padding: 0;
+}

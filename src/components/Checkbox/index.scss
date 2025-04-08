@@ -1,0 +1,21 @@
+@import "@diana-kit/web/src/scss/tokens.scss";
+
+.checkbox-icon {
+  color: $primary700;
+}
+
+.CheckBox-Item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.CheckBox-Item label {
+  color: $secondary900;
+  font-family: $fontFamilyBase;
+  font-weight: $fontWeightLight;
+  font-size: $fontSizeMedium;
+  line-height: $fontLineHeightMedium;
+  cursor: pointer;
+}

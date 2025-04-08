@@ -1,0 +1,46 @@
+@import "@diana-kit/web/src/scss/tokens.scss";
+
+.ModalPromptContainer {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 20;
+  position: fixed;
+  visibility: hidden;
+  overflow-x: auto;
+  background: rgb(130 138 130 / 50%);
+  transition:
+    visibility 0.25s,
+    opacity 0.25s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ModalPromptBox {
+  opacity: 0;
+  min-width: 40%;
+  max-width: 80%;
+  max-height: 80%;
+  overflow-y: auto;
+
+  // transform: translateY(-100px);
+  visibility: hidden;
+  text-align: left;
+  transition:
+    visibility 0.25s,
+    opacity 0.25s,
+    transform 0.25s;
+  transition-delay: 0.25s;
+}
+
+.ShowPromptModal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.PromptTextAreaModal {
+  height: fit-content;
+}
